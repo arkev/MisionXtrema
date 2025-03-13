@@ -48,3 +48,18 @@ setInterval(actualizarCuentaRegresiva, 1000);
 
 // Llamar a la función al cargar la página
 actualizarCuentaRegresiva();
+
+// Modal del menú
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.fa-bars');
+    const closeButton = document.querySelector('.fa-xmark');
+    const menuModal = document.getElementById('menuModal');
+
+    menuButton.addEventListener('click', function() {
+        menuModal.style.display = 'flex';
+    });
+
+    closeButton.addEventListener('click', function() {
+        menuModal.style.display = 'none';
+    });
+});
