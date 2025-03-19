@@ -1,0 +1,85 @@
+/* Encabezado */
+header {
+    padding: 70px 0 0 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -0px; /* Ajustar según sea necesario */
+        left: 0;
+        width: 100%;
+        height: 105px; /* Altura del SVG */
+        background: url(../images/header.svg) no-repeat center top;
+        background-color: #FFF;
+        background-size: cover;
+        z-index: -1; /* Asegurarse de que esté detrás del contenido del header */
+    }
+    img {
+        height: 85px;
+        margin-bottom: 1em;
+    }
+}
+#menuRetractil{
+    margin-top: -44px;
+}
+.fa-bars {
+    background: none;
+    color: #fff;
+    font-size: 32px;
+    &:hover {
+        color: #fcd547;
+        filter: brightness(1);
+    }
+}
+.fa-xmark {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 27px;
+    right: 28px;
+    &:hover {
+        color: #fcd547;
+        filter: brightness(1);
+    }
+}
+#menuModal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ee184ee6; /* Fondo semi-transparente */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    justify-content: center;
+    align-items: center;
+}
+#menuModal nav {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+}
+
+#menuModal ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menuModal li {
+    margin: 10px 0;
+}
+
+#menuModal a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    &:hover {
+        color: #000;
+    }
+}
