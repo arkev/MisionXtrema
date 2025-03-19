@@ -1,10 +1,26 @@
-.vamonos{
-	display: flex;
-	align-content: center;
+#vamonos{
+	margin-left: 15px;
+	margin-right: 15px;
 }
-h3{
-	color:#D6335E;
+#textoyimagen{
+	display:grid;
+	grid-template-columns: 50% 50%;
 }
-buttom{
+#linearoja{
+	background-color:#D6335E;
+	width:auto;
+	height: 15.96px;
+}
+#vamonos h3{
+	color: #D6335E;	
+}
+#vamonos img{
+	width: auto;
+	height: 147.64px;
+	margin-top: 11px;
+}
+#vamonos img {
 	
+}
+#vamonos buttom{
 }
