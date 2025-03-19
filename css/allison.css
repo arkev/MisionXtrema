@@ -1,0 +1,8 @@
+#imagenintro{
+display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 0px 16px;
+	column-gap: 16px;
+	background-color:#1F8FB0;
+		color: #FFFFFF;
+}
