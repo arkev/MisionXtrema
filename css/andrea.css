@@ -1,13 +1,37 @@
 #lineas {
-	display:flex;
+	display:grid;
+	grid-template-columns:33% 33% 33%;
     background-color:#32A552;
-	padding:0px;
+	padding-bottom:50px;
+	
 }
 #lineas>h3{
 	color:white;
 }
-#lineas img{
-    flex: 1;
-    max-width: 100%;
-    height: auto;
+.imgcarrusel{
+	
+	width:auto;
+	height:430px;
 }
+#carrusel1{ 
+background-image:url(../images/lineaA1.jpg);
+	background-size:contain;
+	background-repeat:no-repeat;
+   }
+#carrusel2{ 
+background-image:url("../images/lineaA2.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+   }
+#carrusel3{ 
+background-image:url("../images/lineaA3.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+   }
+#lineas>button{
+	width:100px;
+	
+
+	
+}
+	
