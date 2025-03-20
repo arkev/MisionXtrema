@@ -1,0 +1,34 @@
+#galeria {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px; /* para tener un limite en el ancho máximo para que no se expanda mucho */
+  margin: 0 auto; /* centrar la seccion */
+}
+
+
+#galeria h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  flex-wrap: wrap; /* para q se acomoden y se bajen si no caben */
+  justify-content: center; /* para centrar horzontalmente */
+  gap: 15px; /* el espacio entre imágenes */
+}
+.contenedor-imagenes img {
+  width: 250px; /* un tamaño fijo para que esyen ordenadas */
+  height: 180px; /* altura fija */
+  object-fit: cover; /* recorte sin deformar */
+}
+
+#galeria button {
+  background-color: #4e91c7;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
