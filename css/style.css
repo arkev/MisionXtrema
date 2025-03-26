@@ -38,3 +38,11 @@ button{
         filter: brightness(1.2); /* Aclarar el botón */
     }
 }
+#vamonosLineas{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    gap: 16px;
+}
