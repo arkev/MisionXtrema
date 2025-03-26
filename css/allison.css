@@ -5,4 +5,28 @@ display: grid;
 	column-gap: 16px;
 	background-color:#1F8FB0;
 		color: #FFFFFF;
+	img{
+		width:100%;
+	}
 }
+
+/* Versión tablet */
+	  @media (min-width: 600px){
+		/* aqui abajo van los estilos para tablet */
+#textoyimagen
+color: var(--Blanco, #FFF);
+text-align: center;
+
+/* H2 */
+font-family: Outfit;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.6px;
+	  }
+/* /Versión tablet */
+
+ /* Versión laptop */
+
+ /* Versión desktop */
