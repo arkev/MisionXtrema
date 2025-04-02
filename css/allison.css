@@ -1,15 +1,49 @@
 #imagenintro{
-display: grid;
-	grid-template-columns: 50% 50%;
-	padding: 0px 16px;
-	column-gap: 16px;
-	background-color:#1F8FB0;
-		color: #FFFFFF;
+ 	display: flex;
+    padding: 0px 16px;
+    column-gap: 16px;
+    background-color: #1F8FB0;
+    color: #FFFFFF;
+    align-items: center;
+    justify-items: end;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 	img{
-		width:100%;
+		width:50%;
+		max-width: 400px;
+	}
+	p {
+		max-width: 500px;
+		flex:1;
 	}
 }
-
+#countdown{
+	text-align: center;	
+	max-width: 600px;
+    margin: 0 auto;
+	#meses, #dias, #horas{
+		color: #EE184C;
+		text-align: center;
+		font-size: 85px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -4.25px;
+		width: 100%;
+        display: block;
+	}
+	& > div{
+		display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+	}
+}
+#imagenintro {
+   
+}
 /* Versión tablet */
 	  @media (min-width: 600px){
 		/* aqui abajo van los estilos para tablet */
