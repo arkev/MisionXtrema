@@ -3,7 +3,7 @@ footer{
     color:#000;
 }
 /*patrocinadores*/
-footer div:first-child{
+#patrocinadores{
     display: grid;
     justify-items: center;
     padding: 16px;
@@ -29,7 +29,7 @@ footer div:first-child{
 }
 /*patrocinadores*/
 /*copy*/
-footer div:last-child{
+#copy{
 text-align: center;
 padding-top: 16px;
 padding-bottom: 16px;
