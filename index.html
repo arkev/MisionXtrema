@@ -67,15 +67,21 @@
 
     <!--Ruben-->
     <section id="galeria">
-        <h2>Galería</h2>
-        <img src="images/manos.jpg" alt="foto manos">
-        <img src="images/pintura.jpg" alt="foto pintura">
-        <img src="images/pajarons.jpg" alt="foto pajaros">
-        <img src="images/osos.jpg" alt="foto osos">
-        <img src="images/senioras.jpg" alt="Senioras">
-        <img src="images/Ninoperro.jpg" alt="Nino con perro">
-        <button> Ver más </button>
-    </section>
+  <h2>Galería</h2>
+  <div class="contenedor-imagenes">
+    <img src="images/Ninoperro.jpg" alt="Niño con perro" class="ninoperro">
+    <img src="images/pintura.jpg" alt="Foto pintura" class="pintura">
+    <img src="images/senioras.jpg" alt="Señoras" class="senioras">
+    <img src="images/pajarons.jpg" alt="Pájaros" class="pajaros">
+    <img src="images/manos.jpg" alt="Manos pintando" class="manos">
+    <img src="images/osos.jpg" alt="Osos" class="osos">
+	   <div class="boton-container">
+      <button>Ver más</button>
+    </div>
+  </div>
+</section>
+ 
+		
     <!--/Ruben-->
 
     <section id="vamonosLineas">
@@ -84,7 +90,7 @@
 	<div id="linearoja"></div>
 	<div id="textoyimagen">
 		<div>
-		<h3>¡Vámonos a Creel!</h3>
+		<h2>¡Vámonos a Creel!</h2>
         <p>Conoce más de el siguiente viaje misionero aquí</p></div>
         <img src="images/ninaycirculo.png" alt="nina y circulo"></div>
 	<button class="fa-solid fa-arrow-right"></button>
@@ -94,10 +100,10 @@
 
     <!--Andrea-->
     <section id="lineas">
+        <h2> Conoce más acerca de las Líneas de Acción </h2>
 		<div class="imgcarrusel" id="carrusel1"></div>
 		<div class="imgcarrusel" id="carrusel2"></div>
 		<div class="imgcarrusel" id="carrusel3"></div>
-        <h3> Conoce más acerca de las Líneas de Acción </h3>
         <button class="fa-solid fa-arrow-right"></button>
     </section>
     <!--/Andrea-->
@@ -106,7 +112,7 @@
     <!--Ferran-->
     <footer>
         <!--Patrocinadores-->
-        <div>
+        <div id="patrocinadores">
             <h2>Nuestros patrocinadores</h2>
             <img src="images/soymarts.svg" alt="Logo Soymart">
             <img src="images/colpac.svg" alt="Logo Garden">
@@ -114,7 +120,7 @@
             <img src="images/iasd.svg" alt="logo Iglesia Adventista">
         </div>
         <!--Copy-->
-        <div>
+        <div id="copy">
             <p> Copyright © <span id="anio"></span> Misión Extrema, todos los derechos reservados </p>
             <a href="#" class="lab la-instagram"></a>
             <a href="#" class="lab la-youtube"></a>

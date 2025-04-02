@@ -2,8 +2,7 @@
 	display:grid;
 	grid-template-columns:33% 33% 33%;
     background-color:#32A552;
-	padding-bottom:50px;
-	
+	height:400px;
 }
 #lineas>h3{
 	color:white;
@@ -11,7 +10,7 @@
 .imgcarrusel{
 	
 	width:auto;
-	height:430px;
+	height: 500px;
 }
 #carrusel1{ 
 background-image:url(../images/lineaA1.jpg);
@@ -29,7 +28,7 @@ background-image:url("../images/lineaA3.jpg");
 	background-repeat:no-repeat;
    }
 #lineas>button{
-	width:100px;
+	width:10px;
 	
 
 	
