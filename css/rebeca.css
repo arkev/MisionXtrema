@@ -1,27 +1,35 @@
 #vamonos{
-	margin-left: 15px;
-	margin-right: 15px;
-	display: grid;
+	background-color: #EE184C;
+	padding-top: 16px;
 }
 #textoyimagen{
 	display:grid;
 	grid-template-columns: 50% 50%;
+	background-color: white;
+	align-items: end;
 }
-#linearoja{
-	background-color:#D6335E;
-	width:auto;
-	height: 15.96px;
+#textoyimagen > div > p{
+	margin-bottom: 50px;
 }
-#vamonos h3{
+#lineayboton{
+	background: url("../images/barrarojainferior.svg") no-repeat left bottom white;
+	height: 65px;
+	background-size: cover;
+	margin-top: -33px;
+}
+#vamonos h2{
 	color: #D6335E;	
 }
 #vamonos img{
-	width: auto;
-	height: 147.64px;
+	width: 100%;
 	margin-top: 11px;
 }
-#vamonos img {
-	
-}
-#vamonos buttom{
+#lineayboton > button{
+	width: 67px;
+    height: 32px;
+    background-color: white;
+    color: #EE184C;
+    font-size: 24px;
+    margin-top: 17px;
+    margin-left: 12px;
 }
