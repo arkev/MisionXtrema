@@ -83,3 +83,101 @@ header {
         color: #000;
     }
 }
+
+/* Estilos para la sección de inscripción */
+#inscripcion {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#inscripcion h1 {
+    font-size: 2.5rem;
+    color: #2EAF6E; /* Verde del título */
+    margin-bottom: 20px;
+}
+
+#progreso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#progreso .paso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #0078A8; /* Azul para pasos inactivos */
+}
+
+#progreso .paso span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #0078A8; /* Azul para pasos inactivos */
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#progreso .paso.activo span {
+    background-color: #EE184C; /* Rojo para el paso activo */
+}
+
+#progreso .paso.activo p {
+    color: #EE184C; /* Rojo para el texto del paso activo */
+}
+
+form#formInscripcion {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0078A8; /* Azul para las etiquetas */
+    margin-bottom: 5px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #0078A8; /* Azul para el borde */
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus {
+    border-color: #2EAF6E; /* Verde al enfocar */
+}
+
+.btn-siguiente {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #EE184C; /* Rojo para el botón */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-siguiente:hover {
+    background-color: #C3143C; /* Rojo más oscuro al pasar el mouse */
+}
