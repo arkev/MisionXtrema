@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | Misión Extrema</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body> 
+        <!--Header-->
+        <header>
+            <div></div>
+            <img src="images/misionExtrema.svg" alt="Logo Misión Extrema">
+            <div id="menuRetractil" class="colapsado">
+                <button class="fa-solid fa-bars"></button>
+            </div>
+            <div id="menuModal">
+                <button class="fa-solid fa-xmark"></button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Líneas de acción</a></li>
+                        <li><a href="#">Ediciones</a></li>
+                        <li><a href="#">Donativos</a></li>
+                        <li><a href="#">Apadrinar</a></li>
+                        <li><a href="#">Voluntarios</a></li>
+                        <li><a href="#">Inscripción</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--/Header-->
+
+        <main>
+            <section class="voluntarios">
+                <div>
+                <h1>Voluntarios</h1>
+                <button class="filter-button">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+              </div>
+                <div id="voluntarios-grid">
+                    <div class="voluntario-card">
+                        <img src="images/andrea-ramon.jpg" alt="Andrea Ramón">
+                        <h2>Andrea Ramón</h2>
+                        <p>Psicología Clínica</p>
+                        <button class="apoyar">Apoyar</button>
+                    </div>
+                    <div id="voluntario-card">
+                        <img src="images/ferran-cuenca.jpg" alt="Ferran Cuenca">
+                        <h2>Ferran Cuenca</h2>
+                        <p>Diseño Industrial</p>
+                        <button class="apoyar">Apoyar</button>
+                    </div>
+                    <div id="voluntario-card">
+                        <img src="images/ruben-corona.jpg" alt="Rubén Corona">
+                        <h2>Rubén Corona</h2>
+                        <p>Diseño de Comunicación Visual</p>
+                        <button class="apoyar">Apoyar</button>
+                    </div>
+                    <div id="voluntario-card">
+                        <img src="images/marieli-pizarro.jpg" alt="Marieli Pizarro">
+                        <h2>Marieli Pizarro</h2>
+                        <p>Teología</p>
+                        <button class="apoyar">Apoyar</button>
+                    </div>
+                    <div id="voluntario-card">
+                        <img src="images/allison-caamal.jpg" alt="Allison Caamal">
+                        <h2>Allison Caamal</h2>
+                        <p>Diseño de Interiores</p>
+                        <button class="apoyar">Apoyar</button>
+                    </div>
+                    <div id="voluntario-card">
+                        <img src="images/rebeca-gonzalez.jpg" alt="Rebeca González">
+                        <h2>Rebeca González</h2>
+                        <p>Comunicación y Medios</p>
+                        <button class="apoyar">Apoyar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!--Copy-->
+            <div id="copy">
+                <p> Copyright © <span id="anio"></span> Misión Extrema, todos los derechos reservados </p>
+                <a href="#" class="lab la-instagram"></a>
+                <a href="#" class="lab la-youtube"></a>
+                <a href="#" class="lab la-facebook-square"></a>
+            </div>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+
+    </html>
