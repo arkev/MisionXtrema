@@ -23,6 +23,18 @@ h3{font-size: 1.75rem;}
 h4{font-size: 1.5rem;}
 h5{font-size: 1.25rem;}    
 h6{font-size: 1rem;}
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #0078A8; /* Azul para el borde */
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    &:focus {
+        border-color: #2EAF6E; /* Verde al enfocar */
+    }
+}
 button{
     height: 32px;
     border-radius: 16px;
