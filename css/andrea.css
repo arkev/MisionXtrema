@@ -14,6 +14,7 @@
     align-items: center; /* Centrar el contenido verticalmente */
 }
 .imgcarrusel{
+<<<<<<< Updated upstream
     width: 100%; /* Ajustar al ancho de la columna */
 height:auto; /* Mantener la proporción de la imagen */
 aspect-ratio:1/1; /* Mantener la proporción de la imagen */
@@ -41,5 +42,27 @@ object-fit:cover; /* Asegurar que las imágenes se ajusten bien */
         margin-left: 12px;
 
 }
+=======
+	
+	width:auto;
+	height: 500px;
+
+}#carrusel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 1px; /* Espaciado entre las columnas */
+    justify-items: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    height: 500px; /* Altura del contenedor */
+	width:auto;
+}
+
+.imgcarrusel {
+    width: auto; /* Ajustar al ancho de la columna */
+    height: 150px; /* Mantener proporción de la imagen */
+    object-fit: cover; /* Asegurar que las imágenes se ajusten bien */
+}
+   }
+>>>>>>> Stashed changes
 	
 
