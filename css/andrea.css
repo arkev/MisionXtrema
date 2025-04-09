@@ -14,55 +14,26 @@
     align-items: center; /* Centrar el contenido verticalmente */
 }
 .imgcarrusel{
-<<<<<<< Updated upstream
     width: 100%; /* Ajustar al ancho de la columna */
-height:auto; /* Mantener la proporción de la imagen */
-aspect-ratio:1/1; /* Mantener la proporción de la imagen */
-object-fit:cover; /* Asegurar que las imágenes se ajusten bien */
-    max-width: 100%; /* Evitar que las imágenes excedan el ancho del contenedor */
-    max-height: 100%; /* Evitar que las imágenes excedan la altura del contenedor */
-
+    aspect-ratio:1/1; /* Mantener la proporción de la imagen */
 }
 
-#lineas > #textolineas{
-    grid-row: 2; /* Segunda fila */
-    text-align:left; /* Centrar el texto */
-    color: white; /* Color del texto */
+#lineas > #textolineas {
+    grid-template-columns: 1fr 100px;
+    text-align: left;
+    color: white;
     padding-left: 20px;
     padding-top: 0px;
-    margin:left; /* Centrar el contenedor horizontalmente */
-}
-#lineas > #botón{
-        width: 67px;
-        height: 32px;
-        background-color: white;
-        color: #32A552;
-        font-size: 24px;
-        margin-top: 17px;
-        margin-left: 12px;
-
-}
-=======
-	
-	width:auto;
-	height: 500px;
-
-}#carrusel-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-    gap: 1px; /* Espaciado entre las columnas */
-    justify-items: center; /* Centrar las imágenes horizontalmente */
-    align-items: center; /* Centrar las imágenes verticalmente */
-    height: 500px; /* Altura del contenedor */
-	width:auto;
+    align-items: center;
+    justify-items: stretch;
 }
-
-.imgcarrusel {
-    width: auto; /* Ajustar al ancho de la columna */
-    height: 150px; /* Mantener proporción de la imagen */
-    object-fit: cover; /* Asegurar que las imágenes se ajusten bien */
+#lineas button{
+    width: 67px;
+    height: 32px;
+    background-color: white;
+    color: #32A552;
+    font-size: 24px;
+    margin-top: 17px;
+    margin-left: 12px;
 }
-   }
->>>>>>> Stashed changes
-	
-
