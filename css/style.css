@@ -23,6 +23,18 @@ h3{font-size: 1.75rem;}
 h4{font-size: 1.5rem;}
 h5{font-size: 1.25rem;}    
 h6{font-size: 1rem;}
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #0078A8; /* Azul para el borde */
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    &:focus {
+        border-color: #2EAF6E; /* Verde al enfocar */
+    }
+}
 button{
     height: 32px;
     border-radius: 16px;
@@ -39,10 +51,19 @@ button{
     }
 }
 #vamonosLineas{
-    max-width: 1280px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 16px;
+	width: 90%;
+    margin: 0 auto;
+}
+/* Versión tablet */
+@media (min-width: 768px){
+    #vamonosLineas{
+        max-width: 1280px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
 }
