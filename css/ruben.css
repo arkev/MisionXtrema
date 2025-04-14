@@ -18,9 +18,9 @@ body {
 .contenedor-imagenes {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-  grid-template-rows: repeat(3, 200px);  /* 3 filas de 200px */
-  gap: 15px;
-  margin-bottom: 30px;
+  grid-template-rows: repeat(3, 1fr);  /* 3 filas de 200px */
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Imágenes posicionadas */
@@ -55,7 +55,7 @@ body {
 }
 
 .boton-container {
-  grid-column: 2 / 4; /* columna 2 hasta antes de 4 (es decir, 2 y 3) */
+  grid-column: 2 / 4; /* columna 2 hasta antes de 4 la 2 y 3) */
   grid-row: 3 / 4;
   display: flex;
   justify-content: center;
@@ -72,24 +72,25 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Botón */
 .boton-container button {
   background-color: #4e91c7;
-  color: white;
-  border: none;
-  padding: 45px 250px; /* Tamaño más balanceado */
-  border-radius: 70px;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+color: white;
+padding: 32px 80px;
+border-radius: 70px;
+font-size: 22px;
+font-weight: bold;
+transition: background-color 0.3s ease;
+display: flex;
+align-items: center;
 }
 
 .boton-container button:hover {
   background-color: #3b74a1;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .boton-container button {
+		padding: 32px 150px;
+	}
 }
