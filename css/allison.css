@@ -24,7 +24,6 @@
     margin: 0 auto;
 	#meses, #dias, #horas{
 		color: #EE184C;
-		text-align: center;
 		font-size: 85px;
 		font-style: normal;
 		font-weight: 700;
@@ -50,15 +49,24 @@
 #textoyimagen
 color: var(--Blanco, #FFF);
 text-align: center;
-
-/* H2 */
-font-family: Outfit;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.6px;
 	  }
+
+.blank-line {
+
+  	margin: 0;
+
+}
+
+section {
+	h1{
+		text-align: center;
+		color: #1f8fb0;
+	}
+}
+
+
+
+
 /* /Versión tablet */
 
  /* Versión laptop */
