@@ -89,10 +89,21 @@ header {
     text-align: center;
     padding: 20px;
     margin-bottom: 3rem;
+    transition: opacity 0.5s ease;
     h1 {
         color: #2EAF6E; /* Verde del título */
         margin-bottom: 20px;
     }
+}
+/* Estados de visibilidad */
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #progreso {
@@ -148,6 +159,7 @@ header {
 .campo {
     margin-bottom: 20px;
     text-align: left;
+    position: relative;
     label {
         position: absolute;
         font-size: 1rem;
@@ -160,7 +172,7 @@ header {
         padding: 10px 0 30px 17px;
         z-index: -1;
     }
-    input {
+    input,select, #areasApoyo {
         width: 100%;
         padding: 10px 15px;
         border: 2px solid #0078A8;
@@ -170,7 +182,14 @@ header {
         transition: border-color 0.3s ease;
         margin-top: 2.3rem;
         background: white;
+        &.error {
+            border-color: #EE184C; /* Rojo para el borde de error */
+        }
     }
+}
+.mensajeDeError{
+    grid-column-start: 1;
+    grid-column-end:3;
 }
 .btn-siguiente {
     display: block;
@@ -184,6 +203,49 @@ header {
     height: 40px;
     border-radius: 25px;
 }
+.paso2{
+    label {
+        width: 300px;
+    }
+}
+#inscripcion.paso2  #formInscripcion > div:nth-child(5) > label{
+    top: -37px;
+}
+#areasApoyo{
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: .5rem 1rem;
+    margin-top: 57px!important;
+    input{
+        width: initial;
+        padding: 0;
+        border: none;
+        border-radius: unset;
+        margin: 0;
+        background: initial;
+    }
+}
+.confirmacion {
+    background: #EE184C;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    box-shadow: inset 0px 0px 8px 4px #00000060;
+    border-radius: 2rem;
+    img{width: 100%;}
+    strong{color: #fcd547;}
+    button{
+        background: #2EAF6E;
+        color: #FFF;
+    }
+}
+.paso2,.paso3{
+    display: none;
+}
+
 /* Versión tablet */
 @media (min-width: 600px){
     #formInscripcion {
@@ -194,5 +256,11 @@ header {
     }
     .btn-siguiente {
         margin-top: 39px;
+    }
+    #inscripcion.paso2 #formInscripcion > div:nth-child(5) > label {
+        top: 0px;
+    }
+    #areasApoyo {
+        margin-top: 37px !important;
     }
 }

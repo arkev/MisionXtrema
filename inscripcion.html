@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscripción | Misión Extrema</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body> 
+<body>
     <header>
         <div></div>
         <img src="images/misionExtrema.svg" alt="Logo Misión Extrema">
@@ -38,8 +39,8 @@
         </div>
     </header>
 
-    <!-- Inscripción -->
-    <main id="inscripcion">
+    <!-- Inscripción paso 1 -->
+    <main id="inscripcion" class="paso1 visible">
         <h1>Inscripción</h1>
         <section id="progreso">
             <div class="paso activo">
@@ -58,30 +59,119 @@
         <form id="formInscripcion">
             <div class="campo">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Nombre completo">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
             </div>
             <div class="campo">
                 <label for="fechaNacimiento">Fecha de Nacimiento</label>
-                <input type="date" id="fechaNacimiento" placeholder="DD-MM-AAAA">
+                <input type="date" id="fechaNacimiento" placeholder="DD-MM-AAAA" required>
             </div>
             <div class="campo">
                 <label for="lugarOrigen">Lugar de origen:</label>
-                <input type="text" id="lugarOrigen" placeholder="Ciudad/Estado o País">
+                <input type="text" id="lugarOrigen" placeholder="Ciudad/Estado o País" required>
             </div>
             <div class="campo">
                 <label for="matricula">Matrícula o Nómina</label>
-                <input type="number" id="matricula" placeholder="1190612">
+                <input type="number" id="matricula" placeholder="1190612" required>
             </div>
             <div class="campo">
                 <label for="celular">Número de celular</label>
-                <input type="tel" id="celular" placeholder="+52...">
+                <input type="tel" id="celular" placeholder="+52..." required>
             </div>
-            <button type="submit" class="btn-siguiente">Siguiente</button>
+            <button type="button" class="btn-siguiente">Siguiente</button>
+            <p class="mensajeDeError hidden">Estos campos son requeridos por favor completalos antes de avanzar</p>
         </form>
     </main>
     <!-- /Inscripción -->
 
-    <!--Ferran-->
+    <!-- Inscripción paso 2 -->
+    <main id="inscripcion" class="paso2 hidden">
+        <h1>Inscripción</h1>
+        <section id="progreso">
+            <div class="paso">
+                <span>1</span>
+                <p>personales</p>
+            </div>
+            <div class="paso activo">
+                <span>2</span>
+                <p>generales</p>
+            </div>
+            <div class="paso">
+                <span>3</span>
+                <p>confirmación</p>
+            </div>
+        </section>
+        <form id="formInscripcion">
+            <div class="campo">
+                <label for="correo">Correo Institucional</label>
+                <input type="email" id="correo" placeholder="Ej.@alumno.um.edu.mx" required>
+            </div>
+            <div class="campo">
+                <label for="tallaPlayera">Talla de Playera:</label>
+                <select id="tallaPlayera" required>
+                    <option value="">Escoje tu talla</option>
+                    <option value="chica">Chica</option>
+                    <option value="mediana">Mediana</option>
+                    <option value="grande">Grande</option>
+                    <option value="extraGrande">Extra Grande</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="cartaPatrocinio">¿Necesitas carta para patrocinios?</label>
+                <select id="cartaPatrocinio">
+                    <option value="">Escoje una opción</option>
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="ediciones">¿Has participado en alguna edición?</label>
+                <input type="text" id="ediciones" placeholder="Sí/No ¿cuándo?">
+            </div>
+            <div class="campo">
+                <label for="areasApoyo">¿Área en la que te gustaría apoyar?</label>
+                <div id="areasApoyo">
+                        <input type="checkbox" value="media" name="areasApoyo" required><span>Media</span>
+                        <input type="checkbox" value="educacion" name="areasApoyo" required><span>Educación</span>
+                        <input type="checkbox" value="recursos" name="areasApoyo" required><span>Recursos Asistenciales</span>
+                        <input type="checkbox" value="salud" name="areasApoyo" required><span>Salud</span>
+                        <input type="checkbox" value="espirituales" name="areasApoyo" required><span>Áreas Espirituales</span>
+                </div>
+            </div>
+            <button type="submit" class="btn-siguiente finalizar">Finalizar</button>
+            <p class="mensajeDeError hidden">Estos campos son requeridos por favor completalos antes de avanzar</p>
+        </form>
+    </main>
+    <!-- /Inscripción paso 2 -->
+
+        <!-- Inscripción paso 3 -->
+    <main id="inscripcion" class="paso3 hidden ">
+        <h1>Confirmación</h1>
+        <section id="progreso">
+            <div class="paso">
+                <span>1</span>
+                <p>personales</p>
+            </div>
+            <div class="paso">
+                <span>2</span>
+                <p>generales</p>
+            </div>
+            <div class="paso activo">
+                <span>3</span>
+                <p>confirmación</p>
+            </div>
+        </section>
+        <div class="confirmacion">
+            <img src="images/confirmacion.jpg" alt="Imagen de confirmación">
+            <p>
+                Gracias por inscribirte en <strong>Misión Extrema</strong>. 
+                Pronto nos pondremos en contacto contigo para brindarte más información sobre las próximas reuniones.
+            </p>
+            <button onclick="location.href='index.html'" class="btn-volver">Volver al inicio</button>
+        </div>
+    </main>
+    <!-- /Inscripción paso 3 -->
+
+    
     <footer>
         <!--Copy-->
         <div id="copy">
@@ -91,7 +181,6 @@
             <a href="#" class="lab la-facebook-square"></a>
         </div>
     </footer>
-    <!--/Ferran-->
     <script src="js/scripts.js"></script>
 </body>
 
