@@ -1,3 +1,6 @@
+*{
+    transform: ease .7s;
+}
 footer{
     flex-basis: auto;
     color:#000;
@@ -45,11 +48,17 @@ a{
 
 /*Voluntarios*/
 main{
-    div first-child{
-        display: grid;
-        grid-template-columns: 80% 1fr;
-        justify-content: center;
-        align-items: center;
+    section{
+        div{
+            display: grid;
+            max-width: 1280px;
+            grid-template-columns: 80% 1fr;
+            justify-items: center;
+            align-items: center;
+            h1{
+                color: #1F8FB0;
+            }
+        }
     }
 }
 #voluntarios-grid{
@@ -58,17 +67,55 @@ main{
     padding: 16px;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 16px;
+    column-gap: 16px;
     align-items: center;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 1rem;
-   #voluntario-card{
-    button.apoyar{
-        background-color:#1F8FB0;
-        color: #fff;
-        align-content: center;
+    div{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px 1px #00000020;
+        background-color: #fff;
     }
    }
+   button{
+        height: 32px;
+        border-radius: 16px;
+        border: none;
+        padding: 5px 26px;
+        cursor: pointer;
+        text-align: center;
+        transition: filter 0.3sease;
+        background-color: #1F8FB0;
+        color: #fff;
 }
-/*Voluntarios*/
+
+/* Versión tablet */
+@media (max-width: 720px){
+    #voluntarios-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+    
+}
+/* Versión tablet */
+
+/* Versión teléfono */
+@media (max-width: 400px){
+    #voluntarios-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+    
+}
+/* Versión teléfono */
