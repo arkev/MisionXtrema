@@ -24,7 +24,6 @@
     margin: 0 auto;
 	#meses, #dias, #horas{
 		color: #EE184C;
-		text-align: center;
 		font-size: 85px;
 		font-style: normal;
 		font-weight: 700;
@@ -41,8 +40,7 @@
         justify-content: space-evenly;
 	}
 }
-#imagenintro {
-   
+#imagenintro{
 }
 /* Versión tablet */
 	  @media (min-width: 600px){
@@ -50,15 +48,85 @@
 #textoyimagen
 color: var(--Blanco, #FFF);
 text-align: center;
-
-/* H2 */
-font-family: Outfit;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.6px;
 	  }
+
+.blank-line {
+
+  	margin: 0;
+
+}
+
+section {
+	h1{
+		text-align: center;
+		color: #1f8fb0;
+	}
+}
+#quienes-somos{
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 16px;
+	h1{
+		color: #1F8FB0;
+	}
+	img{
+		width: 100%;
+		max-width: 400px;
+	}
+	p{
+		color: #000;
+	}
+}
+#equipocompuesto{
+	display: flex;
+	text-align: right;
+	margin: auto;
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 16px;
+	column-gap: 16px;
+	background-color: #FFFFFF;
+    color: #000;
+	align-items: center;
+	
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	h1{
+		color: #1F8FB0;
+	}
+	img{
+		width: 50%;
+	}
+	p{
+		color: #000;
+	
+	}
+}
+#pastor{
+	display: flex;
+	text-align: right;
+	margin: auto;
+	max-width: 1200px;
+	width: 90%;
+	padding: 0 16px;
+	column-gap: 16px;
+	background-color: #FFFFFF;
+    color: #000;
+	align-items: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	body {
+		margin: 0;
+		line-height: normal;
+		}		
+		img{
+			width: 30%;
+			max-width: 400px;
+		}
+		p{
+			color: #000;
+		}
+}
+
 /* /Versión tablet */
 
  /* Versión laptop */
