@@ -72,6 +72,9 @@ section {
 	img{
 		width: 100%;
 		max-width: 400px;
+		object-fit: cover;
+		object-position: center;
+		padding: 1%;
 	}
 	p{
 		color: #000;
@@ -120,7 +123,9 @@ section {
 		}		
 		img{
 			width: 30%;
-			max-width: 400px;
+			max-width: 200px;
+			object-fit: cover
+			object-position: center;
 		}
 		p{
 			color: #000;
