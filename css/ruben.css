@@ -94,3 +94,109 @@ align-items: center;
 		padding: 32px 150px;
 	}
 }
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e60012;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.menu-button img {
+  width: 30px;
+  height: auto;
+}
+
+/* Título de la sección */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #f9cc00;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Opciones de pago */
+.payment-options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-option input[type="radio"] {
+  display: none;
+}
+
+.payment-option .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-option .payment-name {
+  font-size: 1.2rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* Mover el círculo del radio button a la derecha */
+.payment-option input[type="radio"]:checked + .icon {
+  background-color: #4d91aa;
+  color: white;
+}
+
+.payment-option input[type="radio"] + .icon {
+  margin-left: auto; /* Alinea el círculo a la derecha */
+  border-radius: 50%; /* Para hacerlo redondo */
+  width: 30px;
+  height: 30px;
+  border: 2px solid #4d91aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el botón de continuar */
+.continue-button {
+  background-color: #4d91aa;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
