@@ -226,3 +226,19 @@ a{
     
 }
 /* Versión tablet */
+
+
+/*Desplegado*/
+
+  
+/* Versión tablet */
+@media (max-width: 720px){
+    #proyectos-grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+    
+}
+/* Versión tablet */
