@@ -133,9 +133,17 @@ section {
 		p{
 			color: #000;
 		}
+	}
 }
-
+/* /Versión movil */
+#comienzo{
+	img{
+		scale: 100%;
+		padding: 16px;
+		max-width: 1200px;}
+}
 /* /Versión tablet */
+
 
  /* Versión laptop */
 
