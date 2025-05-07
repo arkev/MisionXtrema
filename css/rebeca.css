@@ -79,7 +79,11 @@
     height: 24px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.informacion {
-	height: 180px;
+.resumido {
+	height: 120px;
+    overflow: hidden;
+}
+.completo {
+	height: 300px;
     overflow: scroll;
 }
