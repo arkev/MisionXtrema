@@ -56,12 +56,11 @@
     height: 120px;
     object-fit: cover;
     object-position: center;
+	text-align: center;
 }
 .informacionyimagen{
 	gap: 20px;
 	padding: 26px;
 }
-.numero{
-	align-content: center;
-}
+
 
