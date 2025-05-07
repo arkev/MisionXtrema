@@ -121,7 +121,8 @@ align-items: center;
 }
 
 .payment-option input[type="radio"] {
-  display: none;
+  width: 40px;
+  order: 1;
 }
 
 .payment-option .icon {
@@ -145,6 +146,11 @@ align-items: center;
 .payment-option input[type="radio"]:checked + .icon {
   background-color: #4d91aa;
   color: white;
+}
+
+#donativos .fa-cc-paypal, #donativos .fa-money-check-dollar, #donativos .fa-money-bill-wave, #donativos .fa-building-columns, #donativos .fa-hand-holding-dollar{
+	font-size: 35px;
+	margin-right: 16px;
 }
 
 .payment-option input[type="radio"] + .icon {

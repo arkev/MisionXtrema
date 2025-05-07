@@ -56,12 +56,6 @@ text-align: center;
 
 }
 
-section {
-	h1{
-		text-align: center;
-		color: #1f8fb0;
-	}
-}
 #quienes-somos{
 	text-align: center;
 	margin: 16px;
@@ -134,17 +128,33 @@ section {
 			color: #000;
 		}
 	}
+	#comienzo{
+	h2{
+		margin: 0.5px;
+		padding: 1px;
+	}
+	img{
+		width: 100%;
+		max-width: 400px;
+	}
+	#primeramision{
+		width: 100%;
+		max-width: 400px;
+	}
+	#expansion{
+		width: 100%;
+		max-width: 400px;
+	}
+	#posteriores{
+		width: 100%;
+		max-width: 400px;
+	}
+	#respondiendo{
+		width: 100%;
+		max-width: 400px;
+	}
 }
 /* /Versión movil */
-#comienzo{
-	img{
-		scale: 100%;
-		padding: 16px;
-		max-width: 1200px;}
-}
 /* /Versión tablet */
-
-
  /* Versión laptop */
-
  /* Versión desktop */
