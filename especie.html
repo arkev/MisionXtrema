@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especie | Misión Extrema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body> 
+    <header>
+        <div></div>
+        <img src="images/misionExtrema.svg" alt="Logo Misión Extrema">
+        <div id="menuRetractil" class="colapsado">
+            <button class="fa-solid fa-bars"></button>
+        </div>
+        <div id="menuModal">
+            <button class="fa-solid fa-xmark"></button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Líneas de acción</a></li>
+                    <li><a href="#">Ediciones</a></li>
+                    <li><a href="Opcionesdepago.html">Donativos</a></li>
+                    <li><a href="#">Apadrinar</a></li>
+                    <li><a href="voluntarios.html">Voluntarios</a></li>
+                    <li><a href="inscripcion.html">Inscripción</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!--Aqui va el núevo código-->
+
+	
+    <footer>
+        <div id="copy">
+            <p> Copyright © <span id="anio"></span> Misión Extrema, todos los derechos reservados </p>
+            <a href="#" class="lab la-instagram"></a>
+            <a href="#" class="lab la-youtube"></a>
+            <a href="#" class="lab la-facebook-square"></a>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+	<script>
+function redirectToPayment() {
+    // Obtenemos el valor del radio button seleccionado
+    const selectedPayment = document.querySelector('input[name="payment"]:checked');
+    
+    // Si se seleccionó Transferencia, redirigimos a la página de detalles de la transferencia
+    if (selectedPayment && selectedPayment.value === 'transferencia') {
+        window.location.href = 'detalles_transferencia.html'; // Aquí el enlace a la página de detalles
+    } else {
+        alert('Por favor selecciona una opción de pago.');
+    }
+}
+</script>
+
+</body>
+
+</html>

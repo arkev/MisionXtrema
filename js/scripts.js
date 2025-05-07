@@ -206,3 +206,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     });
 }); // Cierre del DOMContentLoaded   
+
+//Opciones de pago
+document.addEventListener('DOMContentLoaded', function opcionesDePago() {
+    const continueButton = document.querySelector('.continue-button');
+    const paymentRadios = document.querySelectorAll('input[name="payment"]');
+
+    continueButton.addEventListener('click', function seleccionaPago() {
+        // Buscar el radio seleccionado
+        const selectedOption = Array.from(paymentRadios).find(radio => radio.checked);
+
+        if (selectedOption) {
+            // Redirigir al HTML correspondiente
+            const selectedValue = selectedOption.value;
+            window.location.href = `${selectedValue}.html`;
+        } else {
+            // Mostrar un mensaje si no se seleccionó ninguna opción
+            alert('Por favor, selecciona una opción de pago antes de continuar.');
+        }
+    });
+});
