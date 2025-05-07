@@ -99,6 +99,10 @@ a{
         background-color: #fff;
         width: 100%;
         border: solid 2px #fff;
+        img{
+            object-fit: cover;
+            width: 100%;   
+        }
         &:hover{
             border: solid 2px #EE184C;
             transition: border 0.3s ease;
@@ -188,6 +192,11 @@ a{
         width: 100%;
         height: 100%;
         border:solid 2px #fff;
+        img{
+            object-fit: cover;
+            width: 100%;
+            
+        }
         &:hover{
             border: solid 2px #EE184C;
             transition: border 0.3s ease;
@@ -217,3 +226,70 @@ a{
     
 }
 /* Versión tablet */
+
+
+/*Desplegado*/
+.desplegado_apadrinar{
+    h1{
+        text-align: center;
+        color: #32A552;
+    }
+    section{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 1280px;
+        margin: 0 auto;
+        img{
+            width: 80%;
+          }
+          div{
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: start;
+            margin-bottom: 1rem;
+          }
+    }
+    .boton{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: start;
+        margin: 0 auto;
+        max-width: 1280px;
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+    
+}
+
+  
+/* Versión tablet */
+@media (max-width: 720px){
+    .desplegado_apadrinar{
+        div{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}
+/* Versión tablet */
+
+/* Versión teléfono */
+@media (max-width: 400px){
+    .desplegado_apadrinar{
+        section{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .boton{
+            margin: 16px auto;
+        }
+    }
+    
+}
+/* Versión teléfono */
