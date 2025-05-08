@@ -312,7 +312,16 @@ button {
     row-gap: 16px;
     column-gap: 16px;
 }
-
+.boton{
+    button:nth-child(1) {
+        background-color: #32A552;
+        width: 85%;
+    }
+    button:nth-child(2) {
+        background-color: #EE184C;
+        width: 85%;
+    }
+}
 #boton_verde {
     background-color: #32A552;
     width: 85%;
