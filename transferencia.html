@@ -39,7 +39,16 @@
     </header>
 
 <!--Aqui va el núevo código-->
-
+    <main>
+        <section id="transferencia">
+            <h1>Donativos</h1>
+            <h2>Transferencia</h2>
+            <h3>Clabe Interbancaria</h3>
+            <h4>559302923913</h4>
+            <h3>Banco</h3>
+            <img src="images/BancoSantander.svg" alt="Banco Santander" style="width: 250px; height: auto;">
+        </section>
+    </main>
 	
     <footer>
         <div id="copy">
@@ -50,19 +59,6 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
-	<script>
-function redirectToPayment() {
-    // Obtenemos el valor del radio button seleccionado
-    const selectedPayment = document.querySelector('input[name="payment"]:checked');
-    
-    // Si se seleccionó Transferencia, redirigimos a la página de detalles de la transferencia
-    if (selectedPayment && selectedPayment.value === 'transferencia') {
-        window.location.href = 'detalles_transferencia.html'; // Aquí el enlace a la página de detalles
-    } else {
-        alert('Por favor selecciona una opción de pago.');
-    }
-}
-</script>
 
 </body>
 

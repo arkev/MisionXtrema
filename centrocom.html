@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Especie | Misión Extrema</title>
+    <title>Paypal | Misión Extrema</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -39,40 +39,33 @@
     </header>
 
 <!--Aqui va el núevo código-->
-<section id="especie">
-    <h1 class="title-yellow">Especie</h1>
-    
-    <div class="species-grid">
-      <!-- Medicamentos -->
-      <div class="species-item">
-        <img src="images/medicamentos.png" alt="Medicamentos" class="species-img">
-        <p class="species-name">Medicamentos</p>
-        <button class="species-btn" onclick="window.location.href='Medicinas.html'">Ver lista</button>
-    </div>
-      
-      <!-- Ropa -->
-      <div class="species-item">
-        <img src="images/ropa.png" alt="Ropa" class="species-img">
-        <p class="species-name">Ropa</p>
-        <button class="species-btn" onclick="window.location.href='ropa.html'">Ver lista</button>
+<main>
+    <!-- Sección de Donar (Centro Comunitario) -->
+    <section id="donar">
+      <!-- 1) Título azul -->
+      <h1 class="title-blue">Donar</h1>
+  
+      <!-- 2) Imagen del Centro Comunitario -->
+      <img
+        src="images/CentroCom.png"
+        alt="Centro Comunitario Adventista"
+        class="donar-img"
+      >
+  
+      <!-- 3) Caja de dirección -->
+      <div class="address-box">
+        Centro comunitario adventista, Avenida Capitán Alonso 345,  
+        67515 Montemorelos, N.L.
       </div>
-      
-      <!-- Juguetes -->
-      <div class="species-item">
-        <img src="images/juguetes.png" alt="Juguetes" class="species-img">
-        <p class="species-name">Juguetes</p>
-        <button class="species-btn" onclick="window.location.href='juguetes.html'">Ver lista</button>
-      </div>
-      
-      <!-- Materiales -->
-      <div class="species-item">
-        <img src="images/especie.png" alt="Materiales" class="species-img">
-        <p class="species-name">Materiales</p>
-        <button class="species-btn" onclick="window.location.href='materiales.html'">Ver lista</button>
-        
-    </div>
-    </div>
-  </section>
+  
+      <!-- 4) Mapa (misma imagen que antes) -->
+      <img
+        src="images/Maps.png"
+        alt="Mapa de la ubicación Centro Comunitario"
+        class="map-img"
+      >
+    </section>
+  </main>
   
 	
     <footer>
@@ -84,6 +77,19 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+	<script>
+function redirectToPayment() {
+    // Obtenemos el valor del radio button seleccionado
+    const selectedPayment = document.querySelector('input[name="payment"]:checked');
+    
+    // Si se seleccionó Transferencia, redirigimos a la página de detalles de la transferencia
+    if (selectedPayment && selectedPayment.value === 'transferencia') {
+        window.location.href = 'detalles_transferencia.html'; // Aquí el enlace a la página de detalles
+    } else {
+        alert('Por favor selecciona una opción de pago.');
+    }
+}
+</script>
 
 </body>
 
