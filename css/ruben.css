@@ -90,6 +90,11 @@ align-items: center;
 	}
 }
 
+#donativos {
+  margin: 0 auto;        /* Centra el contenedor */
+  max-width: 600px;      /* Limita el ancho máximo a 600px */
+  margin-bottom: 35px;
+}
 
 .logo {
   width: 120px;
@@ -166,15 +171,46 @@ align-items: center;
 
 /* Estilos para el botón de continuar */
 .continue-button {
-  background-color: #4d91aa;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  width: 100%;
-  max-width: 300px;
+  
   margin-top: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  
+}
+#donativos > div > label 
+{
+	border:2px solid #fff; 
+    
+}
+#donativos > div > label:hover
+{
+	border:2px solid #32A552; 
+    
+}
+#detalles-transferencia {
+    margin: 20px;
+    text-align: center;
+}
+
+#detalles-transferencia h1 {
+    font-size: 2rem;
+    color: #4d91aa;
+}
+
+#detalles-transferencia h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#detalles-transferencia p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.bank-logo img {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.continue-button {
+   
+    margin-top: 30px; 
 }

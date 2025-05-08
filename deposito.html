@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opciones de pago | Misión Extrema</title>
+    <title>Depósito | Misión Extrema</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -38,45 +38,9 @@
         </div>
     </header>
 
+<!--Aqui va el núevo código-->
 
-	<section id="donativos">
-
-  <h1>Donativos</h1>
-
-  <div class="payment-options">
-    <label class="payment-option">
-      <input type="radio" name="payment" value="paypal" class="payment-radio">
-      <span class="fa-brands fa-cc-paypal"></span>
-      <span class="payment-name">Paypal</span>
-    </label>
-
-    <label class="payment-option">
-      <input type="radio" name="payment" value="transferencia" class="payment-radio">
-      <span class="fa-solid fa-money-check-dollar"></span>
-      <span class="payment-name">Transferencia</span>
-    </label>
-
-    <label class="payment-option">
-      <input type="radio" name="payment" value="deposito" class="payment-radio">
-      <span class="fa-solid fa-building-columns"></span>
-      <span class="payment-name">Deposito bancario</span>
-    </label>
-
-    <label class="payment-option">
-      <input type="radio" name="payment" value="ventanilla" class="payment-radio">
-      <span class="fa-solid fa-money-bill-wave"></span>
-      <span class="payment-name">Pago ventanilla</span>
-    </label>
-
-    <label class="payment-option">
-      <input type="radio" name="payment" value="especie" class="payment-radio">
-      <span class="fa-solid fa-hand-holding-dollar"></span>
-      <span class="payment-name">Especie</span>
-    </label>
-  </div>
-
-  <button class="continue-button">Continuar</button>
-</section>  
+	
     <footer>
         <div id="copy">
             <p> Copyright © <span id="anio"></span> Misión Extrema, todos los derechos reservados </p>
@@ -86,6 +50,20 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+	<script>
+function redirectToPayment() {
+    // Obtenemos el valor del radio button seleccionado
+    const selectedPayment = document.querySelector('input[name="payment"]:checked');
+    
+    // Si se seleccionó Transferencia, redirigimos a la página de detalles de la transferencia
+    if (selectedPayment && selectedPayment.value === 'transferencia') {
+        window.location.href = 'detalles_transferencia.html'; // Aquí el enlace a la página de detalles
+    } else {
+        alert('Por favor selecciona una opción de pago.');
+    }
+}
+</script>
+
 </body>
 
 </html>
