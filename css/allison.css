@@ -325,7 +325,8 @@
 h1 {
   font-size: 2rem;
   margin: 0 0 1.5em;
-}
+  color: #1F8FB0;
+text-align: center;}
 
 .grid {
   display: grid;
@@ -346,7 +347,7 @@ h1 {
   grid-column-start: auto;
   grid-row-start: auto;
   color: #fff;
-  background: url("../images/senioras.jpg");
+  background: url("../images/Ninoperro.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
@@ -354,18 +355,99 @@ h1 {
   cursor: pointer;
   counter-increment: item-counter;
 }
+.item:nth-of-type(2n) {
+  background-image: url("../images/senioras.jpg");
+}
 .item:nth-of-type(3n) {
-  background-image: url("../images/Ninoperro.jpg");
+  background-image: url("../images/pajarons.jpg");
 }
 .item:nth-of-type(4n) {
-  background-image: url("https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
+  background-image: url("../images/osos.jpg");
 }
 .item:nth-of-type(5n) {
-  background-image: url("https://images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  background-image: url("../images/pintura.jpg");
 }
 .item:nth-of-type(6n) {
-  background-image: url("https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  background-image: url("../images/manos.jpg");
 }
+.item:nth-of-type(7n) {
+	background-image: url("../images/i.jpg");
+  }
+  .item:nth-of-type(8n) {
+	background-image: url("../images/a.jpg");
+  }
+  .item:nth-of-type(9n) {
+	background-image: url("../images/y.jpg");
+  }
+  .item:nth-of-type(10n) {
+	background-image: url("../images/w.jpg");
+  }
+  .item:nth-of-type(11n) {
+	background-image: url("../images/d.jpg");
+  }
+  .item:nth-of-type(12n) {
+	background-image: url("../images/q.jpg");
+  }
+  .item:nth-of-type(13n) {
+	background-image: url("../images/s.jpg");
+  }
+  .item:nth-of-type(14n) {
+	background-image: url("../images/l.jpg");
+  }
+  .item:nth-of-type(15n) {
+	background-image: url("../images/h.jpg");
+  }
+  .item:nth-of-type(16n) {
+	background-image: url("../images/f.jpg");
+  }
+  .item:nth-of-type(17n) {
+	background-image: url("../images/j.jpg");
+  }
+  .item:nth-of-type(18n) {
+	background-image: url("../images/c.jpg");
+  }
+  .item:nth-of-type(19n) {
+	background-image: url("../images/g.jpg");
+  }
+  .item:nth-of-type(20n) {
+	background-image: url("../images/n.jpg");
+  }
+  .item:nth-of-type(21n) {
+	background-image: url("../images/z.jpg");
+  }
+  .item:nth-of-type(22n) {
+	background-image: url("../images/x.jpg");
+  }
+  .item:nth-of-type(23n) {
+	background-image: url("../images/2.jpg");
+  }
+  .item:nth-of-type(24n) {
+	background-image: url("../images/v.jpg");
+  }
+  .item:nth-of-type(25n) {
+	background-image: url("../images/d.jpg");
+  }
+  .item:nth-of-type(26n) {
+	background-image: url("../images/f.jpg");
+  }
+  .item:nth-of-type(27n) {
+	background-image: url("../images/Ninoperro.jpg");
+  }
+  .item:nth-of-type(28n) {
+	background-image: url("../images/a.jpg");
+  }
+  .item:nth-of-type(29n) {
+	background-image: url("../images/g.jpg");
+  }
+  .item:nth-of-type(30n) {
+	background-image: url("../images/s.jpg");
+  }
+  .item:nth-of-type(31n) {
+	background-image: url("../images/w.jpg");
+  }
+  .item:nth-of-type(32n) {
+	background-image: url("../images/j.jpg");
+  }
 .item:after {
   content: "";
   position: absolute;
@@ -411,6 +493,8 @@ h1 {
   font-weight: bold;
   font-size: 1.1rem;
   padding-right: 0.5em;
-  color: #444;
+  color: #EE184C;
 }
+footer{
+	margin-top: 64px;
 }
