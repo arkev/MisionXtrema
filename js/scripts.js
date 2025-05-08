@@ -226,3 +226,23 @@ document.addEventListener('DOMContentLoaded', function opcionesDePago() {
         }
     });
 });
+
+//Botones de ediciones
+document.addEventListener("DOMContentLoaded", function botonFlechita() {
+    const botones = document.querySelectorAll(".flechita");
+
+    botones.forEach(boton => {
+        boton.addEventListener("click", () => {
+            const edicion = boton.closest(".edicion");
+            const contenido = edicion.querySelector(".informacion > div");
+
+            if (contenido.classList.contains("resumido")) {
+                contenido.classList.remove("resumido");
+                contenido.classList.add("completo");
+            } else {
+                contenido.classList.remove("completo");
+                contenido.classList.add("resumido");
+            }
+        });
+    });
+});
