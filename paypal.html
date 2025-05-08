@@ -63,6 +63,16 @@ function redirectToPayment() {
     }
 }
 </script>
+<script>
+  document.querySelector('.continue-button').addEventListener('click', function() {
+    const selectedOption = document.querySelector('input[name="payment"]:checked');
+    if (selectedOption && selectedOption.value === 'paypal') {
+      window.location.href = 'https://www.paypal.com/signin';
+    } else {
+      alert('Por favor selecciona una opción de pago.');
+    }
+  });
+</script>
 
 </body>
 
