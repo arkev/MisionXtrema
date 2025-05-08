@@ -41,7 +41,7 @@
 }
 .informacionyimagen {
   	display: grid;
-	grid-template-columns: 20% 77%;
+	grid-template-columns: 30% 65%;
 }
 .edicion {
 	width: 90%;
@@ -86,4 +86,14 @@
 .completo {
 	height: 300px;
     overflow: scroll;
+}
+.informacion h5 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* Versión tablet */
+@media (min-width: 768px){
+    .informacionyimagen {
+		grid-template-columns: 20% 77%;
+	}
 }
