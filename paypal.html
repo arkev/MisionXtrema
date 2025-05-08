@@ -42,6 +42,11 @@
 
 	
     <footer>
+        <script>
+            setTimeout(function() {
+              window.location.href = "https://www.paypal.com/mx/home";
+            }, 300);
+          </script>
         <div id="copy">
             <p> Copyright © <span id="anio"></span> Misión Extrema, todos los derechos reservados </p>
             <a href="#" class="lab la-instagram"></a>
@@ -62,16 +67,6 @@ function redirectToPayment() {
         alert('Por favor selecciona una opción de pago.');
     }
 }
-</script>
-<script>
-  document.querySelector('.continue-button').addEventListener('click', function() {
-    const selectedOption = document.querySelector('input[name="payment"]:checked');
-    if (selectedOption && selectedOption.value === 'paypal') {
-      window.location.href = 'https://www.paypal.com/signin';
-    } else {
-      alert('Por favor selecciona una opción de pago.');
-    }
-  });
 </script>
 
 </body>
