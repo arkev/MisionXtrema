@@ -1,3 +1,6 @@
+
+
+/* MENU LINEAS DE ACCION */
 #lineas {
     display: grid;
     grid-template-rows: auto auto; /* Dos filas: una para cada parte */
@@ -61,6 +64,7 @@
 #lineasAccion > section > a {
 text-decoration: none;
 border-radius: 20px;
+border: 2px solid white;
 }
 #lineasAccion > section > a:nth-child(1):hover{
     border: solid 2px #1F8FB0;  
@@ -94,6 +98,8 @@ border-radius: 20px;
     gap: 10px; /* Espacio entre los elementos */
     padding: 15px;
 }
+
+
 /*Versión Tablet*/
 @media (min-width:768px) {
     #lineasAccion > section {
@@ -116,4 +122,182 @@ border-radius: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }     
+}
+
+
+
+/*TODA LA SECCIÓN DE CARRUSEL*/
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    right: 2%;
+}
+
+.carousel-control.next {
+    left: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3, 
+#carousel-4:checked ~ .control-4{
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet{
+    color:#FCD547;
+}
+
+/* CONFIGURACION PRINCIPAL */
+#desarrollo, #educacion, #salud, #recursos, #fe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 82px 1fr 200px;
+    width: 90%;
+    max-width:400px;
+    margin: 0 auto; /* centra horizontalmente */
+    margin-top: 24px;
+
+    h1,h2{
+        text-align: center;
+    }
+    h1 {
+        color:#FCD547;
+        img{
+            width: 37px;
+        }
+    }
+    & > section.como-ayudar {
+        margin-top:-30px;
+        & > section > div > div > img {
+            width: 100%;
+        }
+        & > div > a.btn.inscribirme {
+            background-color: #EE184C;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 23px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+        }
+        & > div > a.btn.donar {
+            background-color: #FCD547;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 23px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+        }
+        & > div{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        &> section > div{
+            display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+            text-align: center;
+            & > a {
+                text-decoration: none;
+               color:black;
+               & > img {
+                width: 100%;
+            }
+            }
+        }
+    }
+}
+
+/* CAMBIOS */
+
+#educacion {
+    h1{
+        color:#1F8FB0;
+    }
+
 }
