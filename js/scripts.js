@@ -226,3 +226,28 @@ document.addEventListener('DOMContentLoaded', function opcionesDePago() {
         }
     });
 });
+
+//Botones de ediciones
+document.addEventListener('DOMContentLoaded', function botonFlechita() {
+    // Selecciona todos los botones con la clase flechita
+    const flechitas = document.querySelectorAll('.flechita');
+    
+    flechitas.forEach(function(boton) {
+        boton.addEventListener('click', function() {
+            // Alternar la clase en el contenido: de "resumido" a "completo"
+            const contenido = this.closest('.edicion').querySelector('.resumido');
+            if (contenido) {
+                contenido.classList.toggle('completo'); // Alterna la clase que expande o colapsa el contenido
+            }
+            
+            // Alternar el icono: fa-caret-down <-> fa-caret-up
+            if (this.classList.contains('fa-caret-down')) {
+                this.classList.remove('fa-caret-down');
+                this.classList.add('fa-caret-up');
+            } else {
+                this.classList.remove('fa-caret-up');
+                this.classList.add('fa-caret-down');
+            }
+        });
+    });
+});

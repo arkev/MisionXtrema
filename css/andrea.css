@@ -45,6 +45,7 @@
     justify-content: center;
     gap: 1rem;
     margin:0 auto;
+    margin-bottom: 4rem;
 }
 #lineasAccion > h1{
     text-align: center;
