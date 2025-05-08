@@ -228,20 +228,25 @@ document.addEventListener('DOMContentLoaded', function opcionesDePago() {
 });
 
 //Botones de ediciones
-document.addEventListener("DOMContentLoaded", function botonFlechita() {
-    const botones = document.querySelectorAll(".flechita");
-
-    botones.forEach(boton => {
-        boton.addEventListener("click", () => {
-            const edicion = boton.closest(".edicion");
-            const contenido = edicion.querySelector(".informacion > div");
-
-            if (contenido.classList.contains("resumido")) {
-                contenido.classList.remove("resumido");
-                contenido.classList.add("completo");
+document.addEventListener('DOMContentLoaded', function botonFlechita() {
+    // Selecciona todos los botones con la clase flechita
+    const flechitas = document.querySelectorAll('.flechita');
+    
+    flechitas.forEach(function(boton) {
+        boton.addEventListener('click', function() {
+            // Alternar la clase en el contenido: de "resumido" a "completo"
+            const contenido = this.closest('.edicion').querySelector('.resumido');
+            if (contenido) {
+                contenido.classList.toggle('completo'); // Alterna la clase que expande o colapsa el contenido
+            }
+            
+            // Alternar el icono: fa-caret-down <-> fa-caret-up
+            if (this.classList.contains('fa-caret-down')) {
+                this.classList.remove('fa-caret-down');
+                this.classList.add('fa-caret-up');
             } else {
-                contenido.classList.remove("completo");
-                contenido.classList.add("resumido");
+                this.classList.remove('fa-caret-up');
+                this.classList.add('fa-caret-down');
             }
         });
     });
