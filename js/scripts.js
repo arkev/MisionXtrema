@@ -206,3 +206,48 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     });
 }); // Cierre del DOMContentLoaded   
+
+//Opciones de pago
+document.addEventListener('DOMContentLoaded', function opcionesDePago() {
+    const continueButton = document.querySelector('.continue-button');
+    const paymentRadios = document.querySelectorAll('input[name="payment"]');
+
+    continueButton.addEventListener('click', function seleccionaPago() {
+        // Buscar el radio seleccionado
+        const selectedOption = Array.from(paymentRadios).find(radio => radio.checked);
+
+        if (selectedOption) {
+            // Redirigir al HTML correspondiente
+            const selectedValue = selectedOption.value;
+            window.location.href = `${selectedValue}.html`;
+        } else {
+            // Mostrar un mensaje si no se seleccionó ninguna opción
+            alert('Por favor, selecciona una opción de pago antes de continuar.');
+        }
+    });
+});
+
+//Botones de ediciones
+document.addEventListener('DOMContentLoaded', function botonFlechita() {
+    // Selecciona todos los botones con la clase flechita
+    const flechitas = document.querySelectorAll('.flechita');
+    
+    flechitas.forEach(function(boton) {
+        boton.addEventListener('click', function() {
+            // Alternar la clase en el contenido: de "resumido" a "completo"
+            const contenido = this.closest('.edicion').querySelector('.resumido');
+            if (contenido) {
+                contenido.classList.toggle('completo'); // Alterna la clase que expande o colapsa el contenido
+            }
+            
+            // Alternar el icono: fa-caret-down <-> fa-caret-up
+            if (this.classList.contains('fa-caret-down')) {
+                this.classList.remove('fa-caret-down');
+                this.classList.add('fa-caret-up');
+            } else {
+                this.classList.remove('fa-caret-up');
+                this.classList.add('fa-caret-down');
+            }
+        });
+    });
+});

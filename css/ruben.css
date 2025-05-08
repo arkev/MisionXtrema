@@ -90,6 +90,11 @@ align-items: center;
 	}
 }
 
+#donativos {
+  margin: 0 auto;        /* Centra el contenedor */
+  max-width: 600px;      /* Limita el ancho máximo a 600px */
+  margin-bottom: 35px;
+}
 
 .logo {
   width: 120px;
@@ -166,15 +171,737 @@ align-items: center;
 
 /* Estilos para el botón de continuar */
 .continue-button {
+  
+  margin-top: 30px;
+  
+}
+#donativos > div > label 
+{
+	border:2px solid #fff; 
+    
+}
+#donativos > div > label:hover
+{
+	border:2px solid #32A552; 
+    
+}
+#detalles-transferencia {
+    margin: 20px;
+    text-align: center;
+}
+
+#detalles-transferencia h1 {
+    font-size: 2rem;
+    color: #4d91aa;
+}
+
+#detalles-transferencia h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#detalles-transferencia p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.bank-logo img {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.continue-button {
+   
+    margin-top: 30px; 
+}
+#transferencia {
+    margin: 20px;
+    text-align: center;
+}
+#transferencia h1 {
+    font-size: 2rem;
+    color: #4d91aa;
+}
+#transferencia h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+#transferencia p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#transferencia .bank-logo img {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+#deposito {
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    max-width: 600px; /* Limita el ancho máximo */
+}
+
+#deposito h1, #deposito h2, #deposito h3, #deposito h4, #deposito p {
+    margin: 10px 0; /* Espaciado uniforme entre elementos */
+}
+
+#deposito img {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+}
+
+.title-yellow {
+  font-size: 2.5rem;
+  color: #f9cc00;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor pago en ventanilla */
+#ventanilla {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+/* Cada bloque de detalle centrado */
+.detail-block {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Etiqueta (label) */
+.detail-block .label {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+/* Valor (texto destacado) */
+.detail-block .value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0.25rem 0;
+}
+
+/* Logo de la universidad */
+#ventanilla .bank-logo {
+  width: 150px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/* Línea de referencia más pequeña */
+.reference {
+  font-size: 1rem;
+  font-weight: normal;
+}
+/* ==============================
+   Sección Especie
+   ============================== */
+   #especie {
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  #especie .title-yellow {
+    font-size: 2.5rem;
+    color: #f9cc00;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid responsive: 1 columna en móvil, 2 columnas en tablet+ */
+  .species-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  @media (min-width: 600px) {
+    .species-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Cada tarjeta de especie */
+  .species-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagen */
+  .species-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+  
+  /* Nombre debajo de la imagen */
+  .species-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Botón “Ver lista” */
+  .species-btn {
+    background-color: #4d91aa;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex; /* Asegura que el contenido sea un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+  
+  .species-btn:hover {
+    background-color: #39768b;
+  }
+/* Contenedor de la pantalla detalle */
+#especie-detalle {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Título amarillo */
+.title-yellow {
+  font-size: 2.5rem;
+  color: #f9cc00;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagen de detalle */
+.detalle-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Subtítulo negro */
+.subtitle {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+
+/* Botón Donar centrado */
+.donar-btn {
   background-color: #4d91aa;
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  width: 100%;
-  max-width: 300px;
-  margin-top: 30px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 2rem;
 }
+
+.donar-btn:hover {
+  background-color: #39768b;
+}
+/* Contenedor de la sección detalle */
+#especie-detalle {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* Título amarillo */
+.title-yellow {
+  font-size: 2.5rem;
+  color: #f9cc00;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagen de detalle */
+.detalle-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.med-list {
+  display: grid;
+  /* Dos columnas de ancho automático, centradas */
+  grid-template-columns: repeat(2, max-content);
+  /* Espaciado entre filas y columnas */
+  row-gap: 0.5rem;
+  column-gap: 4rem;
+  /* Centrar todo el grid dentro de su contenedor */
+  justify-content: center;
+  /* Quitar márgenes/paddings por defecto */
+  margin: 0 auto 2rem;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.med-list li {
+  /* Asegurarnos de que cada ítem use el marcador dentro */
+  list-style-type: disc;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+/* Botón Donar centrado */
+.donar-btn {
+  background-color: #4d91aa;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.donar-btn:hover {
+  background-color: #39768b;
+}
+/* -------------------------------------------------------
+   A) Contenedor principal de la sección “Especie Detalle”
+   ------------------------------------------------------- */
+   #especie-detalle {
+    max-width: 600px;         /* Ancho máximo de la sección */
+    margin: 0 auto 3rem;      /* Centrado horizontal y margen inferior */
+    padding: 0 1rem;          /* Espacio lateral */
+    text-align: center;       /* TODO inline/inline-block se centra */
+  }
+  
+  /* --------------------------------
+     B) Título en amarillo (h1)
+     -------------------------------- */
+  #especie-detalle .title-yellow {
+    font-size: 2.5rem;
+    color: #f9cc00;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* --------------------------------
+     C) Imagen de detalle (img)
+     -------------------------------- */
+  .detalle-img {
+    display: block;               /* Se comporta como bloque */
+    width: 100%;                  /* Ancho total del contenedor */
+    height: auto;
+    border-radius: 8px;           /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    margin: 0 auto 1.5rem;        /* Centrado + espacio inferior */
+  }
+  
+  /* -------------------------------------------------
+     D) Lista en dos columnas (ul.med-list > li)
+     ------------------------------------------------- */
+  .med-list {
+    display: grid;                        /* Grid para columnas */
+    grid-template-columns: repeat(2, max-content); /* 2 columnas ajustadas al contenido */
+    column-gap: 4rem;                     /* Espacio horizontal entre columnas */
+    row-gap: 0.5rem;                      /* Espacio vertical entre filas */
+    justify-content: center;              /* Centra el grid */
+    margin: 0 auto 2rem;                  /* Centrado + margen inferior */
+    padding: 0;                           /* Quita padding por defecto */
+    list-style-position: inside;          /* Viñetas dentro del área */
+  }
+  
+  .med-list li {
+    list-style-type: disc; /* Viñetas de punto */
+    text-align: left;      /* Alinea texto a la izquierda dentro de cada columna */
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* --------------------------------
+     E) Botón “Donar”
+     -------------------------------- */
+  .donar-btn {
+    display: inline-flex;            /* Inline para respetar text-align del padre */
+    justify-content: center;         /* Centra texto horizontalmente */
+    align-items: center;             /* Centra texto verticalmente */
+    margin: 0 auto 2rem;             /* Centrado + margen inferior */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #4d91aa;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;              /* Asegura texto centrado */
+  }
+  .donar-btn:hover {
+    background-color: #39768b;
+  }
+
+/* Centrar imagen y botón Donar */
+.centrar-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Contenedor principal centrado */
+#especie-detalle {
+  max-width: 600px;
+  margin: 0 auto 3rem;   /* centra la sección */
+  padding: 0 1rem;
+  text-align: center;    /* todo inline/inline-block se centra */
+}
+
+/* Imagen: bloque centrado */
+.detalle-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 auto 1.5rem; /* centrado + espacio abajo */
+}
+
+/* Subtítulo negro centrado */
+.subtitle {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+/* Lista en dos columnas centrada */
+.med-list {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  row-gap: 0.5rem;
+  justify-content: center;  /* centra el grid */
+  margin: 0 auto 2rem;      /* espacio abajo */
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* Ítems de la lista */
+.med-list li {
+  list-style-type: disc;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Botón centrado con Flexbox */
+.donar-btn {
+  display: inline-flex;         /* inline para respetar text-align */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;          /* centrado + espacio abajo */
+  padding: 0.75rem 2rem;
+  background: #4d91aa;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+.donar-btn:hover {
+  background: #39768b;
+}
+/* ======================================================
+   Sección Ubicaciones (Especie – Lugares)
+   ====================================================== */
+   #ubicaciones {
+    max-width: 800px;       /* ancho máximo */
+    margin: 0 auto 3rem;    /* centrado horizontal + espacio abajo */
+    padding: 0 1rem;
+    text-align: center;     /* centra todos los inline/inline-block */
+  }
+  
+  /* Título amarillo */
+  #ubicaciones .title-yellow {
+    font-size: 2.5rem;
+    color: #f9cc00;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid de ubicaciones: 1 columna en móvil, 2 columnas en tablet+ */
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  @media (min-width: 600px) {
+    .locations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Cada tarjeta de ubicación */
+  .location-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagen de ubicación */
+  .location-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+  
+  /* Nombre debajo de la imagen */
+  .location-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Botón “Ver ubicación” */
+  .location-btn {
+    background-color: #4d91aa;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    /* Flexbox para centrar texto dentro del botón */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .location-btn:hover {
+    background-color: #39768b;
+  }
+/* ======================================================
+   Sección “Donar”
+   ====================================================== */
+   #donar {
+    max-width: 800px;           /* Limita el ancho del contenido */
+    margin: 0 auto 3rem;        /* Centrado horizontal + margen inferior */
+    padding: 0 1rem;
+    text-align: center;         /* Centra todo lo inline */
+  }
+  
+  /* 1) Título en azul (igual estilo que tus botones) */
+  #donar .title-blue {
+    font-size: 2.5rem;
+    color: #4d91aa;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 2) Imagen de la iglesia centrada */
+  .donar-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto 1.5rem;
+  }
+  
+  /* 3) Caja de dirección */
+  .address-box {
+    background-color: #f0f0f0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* 4) Imagen del mapa centrada */
+  .map-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+/* -------------------------------------------------------
+   Sección “Donar” (imagen + dirección + mapa)
+   ------------------------------------------------------- */
+   #donar {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  /* 1) Título azul */
+  .title-blue {
+    font-size: 2.5rem;
+    color: #4d91aa;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 2) Imagen principal (Artcom o Iglesia) */
+  .donar-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto 1.5rem;
+  }
+  
+  /* 3) Caja de dirección */
+  .address-box {
+    background-color: #f0f0f0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* 4) Imagen del mapa */
+  .map-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+  #donar {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .title-blue {
+    font-size: 2.5rem;
+    color: #4d91aa;
+    margin-bottom: 1.5rem;
+  }
+  
+  .donar-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto 1.5rem;
+  }
+  
+  .address-box {
+    background-color: #f0f0f0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .map-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+/* -------------------------------------------------------
+   Sección “Donar” (imagen + dirección + mapa)
+   ------------------------------------------------------- */
+   #donar {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .title-blue {
+    font-size: 2.5rem;
+    color: #4d91aa;
+    margin-bottom: 1.5rem;
+  }
+  
+  .donar-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto 1.5rem;
+  }
+  
+  .address-box {
+    background-color: #f0f0f0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .map-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+          
