@@ -128,7 +128,7 @@
 #pastor {
 	display: flex;
 	text-align: right;
-	margin: auto;
+	margin: 64px;
 	max-width: 1200px;
 	width: 90%;
 	padding: 0 16px;
