@@ -904,4 +904,29 @@ align-items: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 0 auto;
   }
-          
+  @media (max-width: 600px) {
+    /* Contenedor principal al 90% centrado */
+    #donativos {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
+  
+    /* Botón “Continuar” al 50% y centrado */
+    #donativos .continue-button {
+      width: 30%; /* ocupa el 30% del contenedor */
+      margin: 10 auto; /* centra el botón horizontalmente */
+      display: block; /* asegura que el margen auto funcione */
+    }
+  }
+
+#especie .med-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Espaciado entre las dos columnas */
+}
+
+#especie .donar-btn {
+  display: block;
+  margin: 20px auto 0; /* Centra el botón debajo de las listas */
+}
