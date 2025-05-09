@@ -41,7 +41,7 @@
 }
 .informacionyimagen {
   	display: grid;
-	grid-template-columns: 30% 65%;
+	grid-template-columns: 40% 55%;
 }
 .edicion {
 	width: 90%;
