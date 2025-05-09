@@ -91,6 +91,9 @@ border: 2px solid white;
 #lineasAccion > section > a:nth-child(4) > div > img{
     margin-left:-20%;
 }
+#lineasAccion > section > a:nth-child(4) > div > span{
+    text-align: center;
+}
 .modulolinea {
     display: flex;
     flex-direction: column; /* Coloca elementos en columna */
@@ -299,5 +302,32 @@ border: 2px solid white;
     h1{
         color:#1F8FB0;
     }
-
+    section.como-ayudar > div > a.btn.donar{
+        background-color:#1F8FB0;
+}
+}
+#salud {
+    h1{
+        color:#EE184C;
+    }
+    section.como-ayudar > div > a.btn.donar{
+        background-color:#1F8FB0;
+}
+}
+#recursos {
+    h1{
+        color:#32A552;
+    margin-bottom: 4px;
+    }
+    & > h1:nth-child(1){
+        margin-bottom: 4px;
+    }
+    section.como-ayudar{
+        margin-bottom: 4px;
+        & > div {
+            margin-top:auto;
+    }
+     > div > a.btn.donar{
+        background-color:#1F8FB0;
+    }
 }
