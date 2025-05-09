@@ -296,8 +296,7 @@ border: 2px solid white;
     }
 }
 
-/* CAMBIOS */
-
+/* DETALLES  */
 #educacion {
     h1{
         color:#1F8FB0;
@@ -322,12 +321,44 @@ border: 2px solid white;
     & > h1:nth-child(1){
         margin-bottom: 4px;
     }
+    & > div{ 
+        margin-top:116px;
+    }
     section.como-ayudar{
         margin-bottom: 4px;
-        & > div {
-            margin-top:auto;
-    }
-     > div > a.btn.donar{
-        background-color:#1F8FB0;
+    & > div > a.btn.donar{
+            background-color:#32A552;
+        }
     }
 }
+#fe {
+    h1{
+        color:#000000;
+    }
+    section.como-ayudar > div > a.btn.donar{
+        background-color:#EE184C;
+}
+section.como-ayudar > div > a.btn.inscribirme{
+    background-color:#32A552;
+}
+}
+
+/*Versión Tablet*/
+@media (min-width:768px) {
+    #desarrollo, #educacion, #salud, #recursos, #fe {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 97px 1fr; 
+        padding:10px 15px;
+        max-width: 1200px;
+        column-gap: 70px;
+        align-content: center;
+     & > h1{
+        grid-column: span 2;
+     }
+   section.como-ayudar{
+    margin: 0;
+    grid-column: span 2;
+    max-width: 80%;
+   }
+   }
+   
