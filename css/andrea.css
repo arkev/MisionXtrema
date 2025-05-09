@@ -346,19 +346,14 @@ section.como-ayudar > div > a.btn.inscribirme{
 /*Versión Tablet*/
 @media (min-width:768px) {
     #desarrollo, #educacion, #salud, #recursos, #fe {
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 97px 1fr; 
-        padding:10px 15px;
-        max-width: 1200px;
-        column-gap: 70px;
-        align-content: center;
-     & > h1{
-        grid-column: span 2;
-     }
-   section.como-ayudar{
-    margin: 0;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 97px 1fr; 
+    padding:10px 15px;
+    max-width: 1200px;
+    column-gap: 70px;
+    align-content: center;
+ & > h1{
     grid-column: span 2;
-    max-width: 80%;
-   }
-   }
-   
+ }
+  }
+}
