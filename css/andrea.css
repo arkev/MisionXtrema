@@ -280,21 +280,9 @@ border: 2px solid white;
             justify-content: center;
             gap: 10px;
         }
-        &> section > div{
-            display: grid;
-           grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 10px;
-            text-align: center;
-            & > a {
-                text-decoration: none;
-               color:black;
-               & > img {
-                width: 100%;
-            }
-            }
         }
     }
-}
+
 
 /* DETALLES  */
 #educacion {
@@ -304,6 +292,12 @@ border: 2px solid white;
     section.como-ayudar > div > a.btn.donar{
         background-color:#1F8FB0;
 }
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet{
+    color:#1F8FB0;
+}
 }
 #salud {
     h1{
@@ -311,6 +305,12 @@ border: 2px solid white;
     }
     section.como-ayudar > div > a.btn.donar{
         background-color:#1F8FB0;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet{
+    color:#EE184C;
 }
 }
 #recursos {
@@ -330,6 +330,12 @@ border: 2px solid white;
             background-color:#32A552;
         }
     }
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet{
+    color:#32A552;
+}
 }
 #fe {
     h1{
@@ -340,6 +346,12 @@ border: 2px solid white;
 }
 section.como-ayudar > div > a.btn.inscribirme{
     background-color:#32A552;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet{
+    color:#000000;
 }
 }
 
@@ -355,5 +367,26 @@ section.como-ayudar > div > a.btn.inscribirme{
  & > h1{
     grid-column: span 2;
  }
-  }
+ & > div{
+    margin-top: 25px;
+ }
+ & > section.como-ayudar{
+    margin: 0;
+ }
+ & > section.otras-acciones > div{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ & > section > div{
+    column-gap: 10px;
+    text-align: center;
+    & > a {
+        text-decoration: none;
+       color:black;
+       & > img {
+        min-width: 30px;
+    }
+    }
+}
+}
 }
