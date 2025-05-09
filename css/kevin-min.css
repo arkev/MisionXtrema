@@ -31,6 +31,7 @@ header {
     font-size: 32px;
     &:hover {
         color: #fcd547;
+        -webkit-filter: brightness(1);
         filter: brightness(1);
     }
 }
@@ -44,6 +45,7 @@ header {
     right: 28px;
     &:hover {
         color: #fcd547;
+        -webkit-filter: brightness(1);
         filter: brightness(1);
     }
 }
@@ -56,7 +58,9 @@ header {
     height: 100%;
     background-color: #ee184ee6; /* Fondo semi-transparente */
     z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 #menuModal nav {
@@ -107,8 +111,11 @@ header {
 }
 
 #progreso {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-align-items: center;
     align-items: center;
     margin: 0 auto 30px;
     max-width: 800px;
@@ -123,8 +130,11 @@ header {
         z-index: -1;
     }
     .paso {
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
+        -webkit-align-items: center;
         align-items: center;
         font-size: 0.9rem;
         color: #0078A8; /* Azul para pasos inactivos */
@@ -266,6 +276,8 @@ input[type="date"] {
         max-width: calc(800px - 1rem); /* Resta el gap del ancho total */
         display: grid;
         grid-template-columns: 1fr 1fr; /* Columnas iguales */
+        -webkit-column-gap: 1rem;
+        -moz-column-gap: 1rem;
         column-gap: 1rem;
     }
     .btn-siguiente {
