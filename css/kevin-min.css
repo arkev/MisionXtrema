@@ -89,7 +89,7 @@ header {
 }
 
 /* Estilos para la sección de inscripción */
-#inscripcion {
+.inscripcion {
     text-align: center;
     padding: 20px;
     margin-bottom: 3rem;
@@ -218,7 +218,7 @@ header {
         width: 300px;
     }
 }
-#inscripcion.paso2  #formInscripcion > div:nth-child(5) > label{
+.inscripcion.paso2  #formInscripcion > div:nth-child(5) > label{
     top: -37px;
 }
 #areasApoyo{
@@ -283,7 +283,7 @@ input[type="date"] {
     .btn-siguiente {
         margin-top: 39px;
     }
-    #inscripcion.paso2 #formInscripcion > div:nth-child(5) > label {
+    .inscripcion.paso2 #formInscripcion > div:nth-child(5) > label {
         top: 0px;
     }
     #areasApoyo {
